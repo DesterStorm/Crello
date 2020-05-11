@@ -4,8 +4,7 @@ import CrelloList from './CrelloList'
 function App() {
   return (
     <div className="App">
-      <h2>the beginning of the end</h2>
-      <CrelloList title="test"/>
+      <h3>the beginning of the end</h3>
     </div>
   );
 }
