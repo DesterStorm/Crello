@@ -4,8 +4,8 @@ import Typography from '@material-ui/core/Typography';
 
 const CrelloCard = () => {
   return(
-    <Card>
-      <Typography gutterBottom>
+    <Card className={classes.root}>
+        <Typography gutterBottom>
         Word of the Day
       </Typography>
     </Card>

@@ -13,9 +13,9 @@ const CrelloList = ({title}) => {
 const styles = {
   container: {
     backgroundColor: '#ccc',
-    borderRadius: 10,
-    width: 260,
-    padding: 8
+    borderRadius: 3,
+    width: 260
+    padding: 10
   }
 }
 
