@@ -22,6 +22,7 @@ const styles = {
   listsContainer: {
     display: "flex",
     flexDirection: "row", 
+    margin
   }
 }
 

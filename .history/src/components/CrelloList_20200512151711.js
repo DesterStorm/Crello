@@ -17,7 +17,7 @@ const styles = {
     backgroundColor: '#ccc',
     borderRadius: 10,
     width: 260,
-    padding: 8,
+    padding: 8
     marginRight: 8
   }
 }

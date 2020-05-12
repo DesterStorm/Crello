@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <h2>the beginning of the end</h2>
-        <div style= {styles.listsContainer}>
+        <div>
           { lists.map(list => (
             <CrelloList title={list.title} cards={list.cards} /> 
           ))}
@@ -20,8 +20,7 @@ class App extends Component {
 
 const styles = {
   listsContainer: {
-    display: "flex",
-    flexDirection: "row", 
+    
   }
 }
 

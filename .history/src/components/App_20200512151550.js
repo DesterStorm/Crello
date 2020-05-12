@@ -21,7 +21,7 @@ class App extends Component {
 const styles = {
   listsContainer: {
     display: "flex",
-    flexDirection: "row", 
+    flexDirection: "row"
   }
 }
 
