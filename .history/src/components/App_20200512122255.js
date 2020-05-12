@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CrelloList from './CrelloList'
 import { connect } from 'react-redux'
 
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
         <h2>the beginning of the end</h2>
         { lists.map(list => (
-          <CrelloList title={list.title} cards={list.cards} /> 
+          <CrelloList title={listsReducer.title} cards={list.cards} /> 
         ))}
       </div>
     );

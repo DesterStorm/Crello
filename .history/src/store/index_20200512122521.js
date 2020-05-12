@@ -3,6 +3,6 @@ import rootReducer from '../reducers'
 
 
 
-const store = createStore(rootReducer)
+const store = createStore(reducer)
 
 export default store
