@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 
 const CrelloCard = ({text}) => {
   return(
-    <Card style={styles.cardContainer}>
+    <Card style=>
       <CardContent>
         <Typography gutterBottom>
           {text}

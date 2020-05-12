@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 
 const CrelloCard = ({text}) => {
   return(
-    <Card style={styles.cardContainer}>
+    <Card>
       <CardContent>
         <Typography gutterBottom>
           {text}
@@ -15,10 +15,6 @@ const CrelloCard = ({text}) => {
   )
 }
 
-const styles = {
-  cardContainer: {
-    marginBottom: 8
-  }
-}
+const styles
 
 export default CrelloCard
