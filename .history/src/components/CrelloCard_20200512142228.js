@@ -11,5 +11,5 @@ const CrelloCard = ({text}) => {
     </Card>
   )
 }
-
+recieve 
 export default CrelloCard

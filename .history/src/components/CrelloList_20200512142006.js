@@ -7,7 +7,7 @@ const CrelloList = ({title, cards}) => {
     <h4>{title}</h4>
     { cards.map(card => (
       <CrelloCard text={card.text} />
-      ))}
+      )}
     </div>
   )
 }

@@ -6,7 +6,7 @@ const CrelloCard = ({text}) => {
   return(
     <Card>
       <Typography gutterBottom>
-        {text}
+        {Word of the Day}
       </Typography>
     </Card>
   )
