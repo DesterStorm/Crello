@@ -73,7 +73,7 @@ class CrelloActionButton extends React.Component {
           style={{
             resize: 'none',
             width: '100%',
-            overflow: 'hidden',
+            overflow: ''
             outline: 'none',
             border: 'none'
           }}

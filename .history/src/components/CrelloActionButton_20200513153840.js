@@ -58,12 +58,7 @@ class CrelloActionButton extends React.Component {
     const buttonTitle = list ? 'Add List' : 'Add Card'
 
     return <div>
-      <Card style={{
-        overflow: 'visible',
-        minHeight: 65,
-        minWidth: 272,
-        padding: '6px 8px 2px'
-      }}>
+      <Card style=({})>
         <Textarea 
           placeholder={placeholder} 
           autoFocus 
@@ -73,7 +68,6 @@ class CrelloActionButton extends React.Component {
           style={{
             resize: 'none',
             width: '100%',
-            overflow: 'hidden',
             outline: 'none',
             border: 'none'
           }}

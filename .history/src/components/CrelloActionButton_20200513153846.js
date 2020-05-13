@@ -59,10 +59,7 @@ class CrelloActionButton extends React.Component {
 
     return <div>
       <Card style={{
-        overflow: 'visible',
-        minHeight: 65,
-        minWidth: 272,
-        padding: '6px 8px 2px'
+        
       }}>
         <Textarea 
           placeholder={placeholder} 
@@ -73,7 +70,6 @@ class CrelloActionButton extends React.Component {
           style={{
             resize: 'none',
             width: '100%',
-            overflow: 'hidden',
             outline: 'none',
             border: 'none'
           }}
