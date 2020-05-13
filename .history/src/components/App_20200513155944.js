@@ -13,7 +13,7 @@ class App extends Component {
           { lists.map(list => (
             <CrelloList key={list.id} title={list.title} cards={list.cards} /> 
           ))}
-          <CrelloActionButton list />
+          <CrelloActionButton list 
         </div>
       </div>
     );

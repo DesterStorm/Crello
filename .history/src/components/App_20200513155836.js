@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CrelloList from './CrelloList'
 import { connect } from 'react-redux'
-import CrelloActionButton from './CrelloActionButton'
+import CrelloActionButton from ''
 
 class App extends Component {
   render () {
@@ -13,7 +13,6 @@ class App extends Component {
           { lists.map(list => (
             <CrelloList key={list.id} title={list.title} cards={list.cards} /> 
           ))}
-          <CrelloActionButton list />
         </div>
       </div>
     );

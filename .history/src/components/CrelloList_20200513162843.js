@@ -21,7 +21,7 @@ const styles = {
     width: 295,
     padding: 8,
     marginRight: 8,
-    height: '100%'
+    height: 100%
   }
 }
 

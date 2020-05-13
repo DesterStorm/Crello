@@ -20,8 +20,8 @@ const styles = {
     borderRadius: 10,
     width: 295,
     padding: 8,
-    marginRight: 8,
-    height: '100%'
+    marginRight: 8
+    height
   }
 }
 

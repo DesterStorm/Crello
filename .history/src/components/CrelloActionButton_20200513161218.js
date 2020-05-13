@@ -35,7 +35,7 @@ class CrelloActionButton extends React.Component {
     const buttonText = list ? 'Add another list' : 'Add another card'
     const buttonTextOpacity = list ? 1 : .5
     const buttonTextColor = list ? 'white' : 'inherit'
-    const buttonTextBackground = list ? 'rgba(0,0,0,0.25)' : 'inherit'
+    const buttonTextBackground = list ? 'rgba(0,0,0,.15)' : 'inherit'
 
     return (
       <div 
@@ -86,7 +86,7 @@ class CrelloActionButton extends React.Component {
           style={{ color: 'white', backgroundColor: '#5aac44' }}>
           {buttonTitle}
         </Button>
-        <Icon style={{ marginLeft: 8, cursor: 'pointer' }}>close</Icon>
+        <Icon style={{ marginLeft: 8, cursor: 'pointer' }}></Icon>
       </div>
     </div>
   }
@@ -97,7 +97,7 @@ class CrelloActionButton extends React.Component {
 }
 
 const styles = {
-  openFormButtonGroup: {
+  openForButtonGroup: {
     display: 'flex',
     alignItems: 'center',
     cursor: 'pointer',

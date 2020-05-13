@@ -35,7 +35,7 @@ class CrelloActionButton extends React.Component {
     const buttonText = list ? 'Add another list' : 'Add another card'
     const buttonTextOpacity = list ? 1 : .5
     const buttonTextColor = list ? 'white' : 'inherit'
-    const buttonTextBackground = list ? 'rgba(0,0,0,0.25)' : 'inherit'
+    const buttonTextBackground = list ? 'rgba(0,0,0,025)' : 'inherit'
 
     return (
       <div 
