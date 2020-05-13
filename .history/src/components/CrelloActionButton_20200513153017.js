@@ -67,9 +67,8 @@ class CrelloActionButton extends React.Component {
           onChange={this.handleInputChange}
           style={{
             resize: 'none',
-            width: '100%',
-            outline: 'none',
-            border: 'none'
+            width: 100%,
+            outline: 'none 
           }}
         />
       </Card>

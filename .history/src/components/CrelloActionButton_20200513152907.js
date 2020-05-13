@@ -6,7 +6,7 @@ import Card from '@material-ui/core/Card';
 class CrelloActionButton extends React.Component {
 
   state = {
-    formOpen: false,
+    formOpen: false
     text: ''
   }
 
@@ -65,12 +65,7 @@ class CrelloActionButton extends React.Component {
           onBlur={this.closeForm}
           value={this.state.text}
           onChange={this.handleInputChange}
-          style={{
-            resize: 'none',
-            width: '100%',
-            outline: 'none',
-            border: 'none'
-          }}
+          style={{}}
         />
       </Card>
     </div>

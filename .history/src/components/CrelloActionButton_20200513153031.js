@@ -68,8 +68,8 @@ class CrelloActionButton extends React.Component {
           style={{
             resize: 'none',
             width: '100%',
-            outline: 'none',
-            border: 'none'
+            outline: 'none'
+             
           }}
         />
       </Card>
