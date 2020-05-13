@@ -18,6 +18,7 @@ const initialState = [
     title: 'this is a 2nd list',
     id: 0,
     cards: [
+    
       {
         id: 1,
         text: 'this will use a mix of material UI, React and styled components'

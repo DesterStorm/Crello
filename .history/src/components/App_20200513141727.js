@@ -10,7 +10,7 @@ class App extends Component {
         <h2>the beginning of the end</h2>
         <div style= {styles.listsContainer}>
           { lists.map(list => (
-            <CrelloList key={list.id} title={list.title} cards={list.cards} /> 
+            <CrelloList key={.id} title={list.title} cards={list.cards} /> 
           ))}
         </div>
       </div>
