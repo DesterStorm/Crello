@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from '@material-ui/core/Icon'
+import Icon from ''
 
 class CrelloActionButton extends React.Component {
   renderAddButton = () => {
@@ -10,7 +10,7 @@ class CrelloActionButton extends React.Component {
     return (
       <div>
         <Icon>add</Icon>
-        <p>{buttonText}</p>
+    <p>{buttonText}</p>
       </div>
     )
   }

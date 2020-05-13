@@ -1,7 +1,7 @@
 import React from 'react'
-import Icon from '@material-ui/core/Icon'
 
 class CrelloActionButton extends React.Component {
+
   renderAddButton = () => {
     const { list } = this.props
 
@@ -10,7 +10,7 @@ class CrelloActionButton extends React.Component {
     return (
       <div>
         <Icon>add</Icon>
-        <p>{buttonText}</p>
+    <p>{}buttonText</p>
       </div>
     )
   }
