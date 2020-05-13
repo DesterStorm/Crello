@@ -7,10 +7,8 @@ class CrelloActionButton extends React.Component {
     formOpen: false
   }
 
-  openForm = () => {
-    this.setState({
-      formOpen: true
-    })
+  openForm {
+    
   }
 
   renderAddButton = () => {
@@ -23,12 +21,11 @@ class CrelloActionButton extends React.Component {
 
     return (
       <div 
-        onClick={this.openForm}
-        style={{
-          ...styles.openForButtonGroup,
-          opacity: buttonTextOpacity, 
-          color: buttonTextColor, 
-          backgroundColor: buttonTextBackground
+      style={{
+        ...styles.openForButtonGroup,
+        opacity: buttonTextOpacity, 
+        color: buttonTextColor, 
+        backgroundColor: buttonTextBackground
         }}
       >
         <Icon>add</Icon>

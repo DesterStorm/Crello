@@ -23,7 +23,7 @@ class CrelloActionButton extends React.Component {
 
     return (
       <div 
-        onClick={this.openForm}
+        onClick
         style={{
           ...styles.openForButtonGroup,
           opacity: buttonTextOpacity, 
