@@ -80,7 +80,7 @@ class CrelloActionButton extends React.Component {
           }}
         />
       </Card>
-      <div style={styles.formButtonGroup}>
+      <div>
         <Button variant='contained' style={{ color: 'white', backgroundColor: '#5aac44' }}>
           {buttonTitle}
         </Button>
@@ -105,8 +105,7 @@ const styles = {
   },
   formButtonGroup: {
     marginTop: 8,
-    display: 'flex',
-    alignItems: 'center'
+    
   }
 }
 

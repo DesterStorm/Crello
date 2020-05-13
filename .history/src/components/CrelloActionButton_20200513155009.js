@@ -2,7 +2,6 @@ import React from 'react'
 import Icon from '@material-ui/core/Icon'
 import Textarea from 'react-textarea-autosize';
 import Card from '@material-ui/core/Card';
-import Button from '@material-ui/core/Button';
 
 class CrelloActionButton extends React.Component {
 
@@ -80,10 +79,8 @@ class CrelloActionButton extends React.Component {
           }}
         />
       </Card>
-      <div style={styles.formButtonGroup}>
-        <Button variant='contained' style={{ color: 'white', backgroundColor: '#5aac44' }}>
-          {buttonTitle}
-        </Button>
+      <div>
+        <Button variant='contained' style={{ color: 'white', backgroundColor: '#' }}
       </div>
     </div>
   }
@@ -102,11 +99,6 @@ const styles = {
     height: 36,
     width: 260,
     paddingLeft: 8
-  },
-  formButtonGroup: {
-    marginTop: 8,
-    display: 'flex',
-    alignItems: 'center'
   }
 }
 
