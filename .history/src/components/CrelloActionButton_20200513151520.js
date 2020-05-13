@@ -1,6 +1,6 @@
 import React from 'react'
 import Icon from '@material-ui/core/Icon'
-import Textarea from 'react-textarea-autosize';
+import TextareaAutosize from 'react-textarea-autosize';
 import Card from '@material-ui/core/Card';
 
 class CrelloActionButton extends React.Component {
@@ -16,9 +16,7 @@ class CrelloActionButton extends React.Component {
   }
 
   closeForm = (e) => {
-    this.setState({
-      formOpen: false
-    })
+    this.setState
   }
 
   renderAddButton = () => {
@@ -52,7 +50,7 @@ class CrelloActionButton extends React.Component {
 
     return <div>
       <Card>
-        <Textarea 
+        <TextareaAutosize 
           placeholder={placeholder} autoFocus onBlur={this.closeForm}
         />
       </Card>

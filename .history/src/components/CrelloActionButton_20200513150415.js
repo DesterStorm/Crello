@@ -1,7 +1,5 @@
 import React from 'react'
 import Icon from '@material-ui/core/Icon'
-import Textarea from 'react-textarea-autosize';
-import Card from '@material-ui/core/Card';
 
 class CrelloActionButton extends React.Component {
 
@@ -12,12 +10,6 @@ class CrelloActionButton extends React.Component {
   openForm = () => {
     this.setState({
       formOpen: true
-    })
-  }
-
-  closeForm = (e) => {
-    this.setState({
-      formOpen: false
     })
   }
 
@@ -46,17 +38,10 @@ class CrelloActionButton extends React.Component {
   }
 
   renderForm = () => {
-    const { list } = this.props 
-    const placeholder = list ? 'Enter list title' : 'Enter the card title'
-    const buttonTitle = list ? 'Add List' : 'Add Card'
 
-    return <div>
-      <Card>
-        <Textarea 
-          placeholder={placeholder} autoFocus onBlur={this.closeForm}
-        />
-      </Card>
-    </div>
+    const { list } = this.props 
+    const placeholder = list ? ''
+    return <p>YOOOOOOOOOO</p>
   }
 
   render() {

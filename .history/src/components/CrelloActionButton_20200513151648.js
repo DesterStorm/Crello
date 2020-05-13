@@ -16,9 +16,9 @@ class CrelloActionButton extends React.Component {
   }
 
   closeForm = (e) => {
-    this.setState({
+    this.setState([
       formOpen: false
-    })
+    ])
   }
 
   renderAddButton = () => {
@@ -52,7 +52,7 @@ class CrelloActionButton extends React.Component {
 
     return <div>
       <Card>
-        <Textarea 
+        <TextareaAutosize 
           placeholder={placeholder} autoFocus onBlur={this.closeForm}
         />
       </Card>

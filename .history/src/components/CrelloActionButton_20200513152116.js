@@ -18,7 +18,7 @@ class CrelloActionButton extends React.Component {
   closeForm = (e) => {
     this.setState({
       formOpen: false
-    })
+    ])
   }
 
   renderAddButton = () => {
