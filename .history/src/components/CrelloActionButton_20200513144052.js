@@ -2,11 +2,6 @@ import React from 'react'
 import Icon from '@material-ui/core/Icon'
 
 class CrelloActionButton extends React.Component {
-
-state = {
-  formOpen: false
-}
-
   renderAddButton = () => {
     const { list } = this.props
 
@@ -16,38 +11,15 @@ state = {
     const buttonTextBackground = list ? 'rbga(0,0,0,.15)' : 'inherit'
 
     return (
-      <div 
-      style={{
-        ...styles.openForButtonGroup,
-        opacity: buttonTextOpacity, 
-        color: buttonTextColor, 
-        backgroundColor: buttonTextBackground
-        }}
-      >
+      <div style{{opacity}}>
         <Icon>add</Icon>
         <p>{buttonText}</p>
       </div>
     )
   }
 
-  renderForm = () => {
-    return <p>YOOOOOOOOOO</p>
-  }
-
   render() {
-    return this.state.formOpen ? this.renderForm() : this.renderAddButton()
-  }
-}
-
-const styles = {
-  openForButtonGroup: {
-    display: 'flex',
-    alignItems: 'center',
-    cursor: 'pointer',
-    borderRadius: 3,
-    height: 36,
-    width: 260,
-    paddingLeft: 8
+    return this.renderAddButton()
   }
 }
 

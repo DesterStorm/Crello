@@ -35,7 +35,7 @@ state = {
   }
 
   render() {
-    return this.state.formOpen ? this.renderForm() : this.renderAddButton()
+    return this.state.formOpen ?  this.renderAddButton()
   }
 }
 

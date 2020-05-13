@@ -1,6 +1,6 @@
 import React from 'react'
 import CrelloCard from './CrelloCard'
-import CrelloActionButton from './CrelloActionButton'
+import 
 
 const CrelloList = ({title, cards}) => {
   return (
@@ -9,7 +9,6 @@ const CrelloList = ({title, cards}) => {
     { cards.map(card => (
       <CrelloCard key={card.id} text={card.text} />
       ))}
-      <CrelloActionButton />
     </div>
   )
 }

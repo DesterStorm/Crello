@@ -4,7 +4,7 @@ import Icon from '@material-ui/core/Icon'
 class CrelloActionButton extends React.Component {
 
 state = {
-  formOpen: false
+  formOpen: 
 }
 
   renderAddButton = () => {

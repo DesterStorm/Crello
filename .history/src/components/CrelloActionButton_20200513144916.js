@@ -2,11 +2,6 @@ import React from 'react'
 import Icon from '@material-ui/core/Icon'
 
 class CrelloActionButton extends React.Component {
-
-state = {
-  formOpen: false
-}
-
   renderAddButton = () => {
     const { list } = this.props
 
@@ -31,11 +26,11 @@ state = {
   }
 
   renderForm = () => {
-    return <p>YOOOOOOOOOO</p>
+    
   }
 
   render() {
-    return this.state.formOpen ? this.renderForm() : this.renderAddButton()
+    return this.renderAddButton()
   }
 }
 
