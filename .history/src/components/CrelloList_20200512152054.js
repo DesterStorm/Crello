@@ -14,7 +14,7 @@ const CrelloList = ({title, cards}) => {
 
 const styles = {
   container: {
-    backgroundColor: '#dfe3e6',
+    backgroundColor: '#dfe',
     borderRadius: 10,
     width: 260,
     padding: 8,
