@@ -39,7 +39,7 @@ class CrelloActionButton extends React.Component {
       dispatch(addList(text))
     }
 
-    return;
+    return 
   }
 
   renderAddButton = () => {

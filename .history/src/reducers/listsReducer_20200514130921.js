@@ -1,6 +1,6 @@
 import { CONSTANTS } from '../actions'
 
-let listID = 3 
+const listID = 3 
 
 const initialState = [
   {

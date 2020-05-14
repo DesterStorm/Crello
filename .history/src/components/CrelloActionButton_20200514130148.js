@@ -95,7 +95,7 @@ class CrelloActionButton extends React.Component {
       </Card>
       <div style={styles.formButtonGroup}>
         <Button 
-          onMouseDown={ this.handleAddList }
+          onClick={ this.handleAddList }
           variant='contained' 
           style={{ color: 'white', backgroundColor: '#5aac44' }}>
           {buttonTitle}

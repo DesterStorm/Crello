@@ -1,8 +1,8 @@
-import { CONSTANTS } from '../actions'
+import { CONSTANTS}
 
 export const addList = title => {
   return {
-    type: CONSTANTS.ADD_LIST,
+    type: ,
     payload: title
   }
 }

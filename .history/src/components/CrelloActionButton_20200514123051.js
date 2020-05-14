@@ -32,14 +32,14 @@ class CrelloActionButton extends React.Component {
   }
 
   handleAddList = () => {
-    const { dispatch } = this.props;
-    const { text } = this.state;
+    const { dispatch } = this.props
+    const { text } = this.state
 
-    if(text){
+    if(text) {
       dispatch(addList(text))
     }
 
-    return;
+    return 
   }
 
   renderAddButton = () => {
@@ -95,7 +95,7 @@ class CrelloActionButton extends React.Component {
       </Card>
       <div style={styles.formButtonGroup}>
         <Button 
-          onMouseDown={ this.handleAddList }
+        
           variant='contained' 
           style={{ color: 'white', backgroundColor: '#5aac44' }}>
           {buttonTitle}
@@ -127,4 +127,4 @@ const styles = {
   }
 }
 
-export default connect()(CrelloActionButton)
+export default connect() (CrelloActionButton)
