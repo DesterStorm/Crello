@@ -4,7 +4,7 @@ import Textarea from 'react-textarea-autosize';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
 import { connect } from 'react-redux'
-import { addList } from '../actions'
+import { addList }
 
 class CrelloActionButton extends React.Component {
 
@@ -115,4 +115,4 @@ const styles = {
   }
 }
 
-export default connect() (CrelloActionButton)
+export default CrelloActionButton

@@ -115,4 +115,4 @@ const styles = {
   }
 }
 
-export default connect() (CrelloActionButton)
+export default connect() CrelloActionButton
