@@ -9,7 +9,7 @@ const CrelloList = ({title, cards, listID}) => {
     { cards.map(card => (
       <CrelloCard key={card.id} text={card.text} />
       ))}
-      <CrelloActionButton listID={listID} />
+      <CrelloActionButton listID={list.id} />
     </div>
   )
 }

@@ -11,7 +11,7 @@ class App extends Component {
         <h2>the beginning of the end</h2>
         <div style= {styles.listsContainer}>
           { lists.map(list => (
-            <CrelloList listID={list.id} key={list.id} title={list.title} cards={list.cards} /> 
+            <CrelloList listID={} key={list.id} title={list.title} cards={list.cards} /> 
           ))}
           <CrelloActionButton list />
         </div>

@@ -42,15 +42,6 @@ class CrelloActionButton extends React.Component {
     return;
   }
 
-  handleAddCard = () => {
-    const { dispatch, listID } = this.props 
-    const { text } = this.state
-
-    if(text) {
-      dispatch(addCard(listID, text))
-    }
-  }
-
   renderAddButton = () => {
     const { list } = this.props
 
@@ -104,7 +95,7 @@ class CrelloActionButton extends React.Component {
       </Card>
       <div style={styles.formButtonGroup}>
         <Button 
-          onMouseDown={ list ? this.handleAddList : this.handleAddCard }
+          onMouseDown={ list ? this.handleAddList :  }
           variant='contained' 
           style={{ color: 'white', backgroundColor: '#5aac44' }}>
           {buttonTitle}

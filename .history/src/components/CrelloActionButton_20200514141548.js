@@ -42,14 +42,7 @@ class CrelloActionButton extends React.Component {
     return;
   }
 
-  handleAddCard = () => {
-    const { dispatch, listID } = this.props 
-    const { text } = this.state
-
-    if(text) {
-      dispatch(addCard(listID, text))
-    }
-  }
+  handle
 
   renderAddButton = () => {
     const { list } = this.props

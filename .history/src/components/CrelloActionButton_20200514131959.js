@@ -4,7 +4,7 @@ import Textarea from 'react-textarea-autosize';
 import Card from '@material-ui/core/Card';
 import Button from '@material-ui/core/Button';
 import { connect } from 'react-redux'
-import { addList, addCard } from '../actions'
+import { addList } from '../actions'
 
 class CrelloActionButton extends React.Component {
 
@@ -40,15 +40,6 @@ class CrelloActionButton extends React.Component {
     }
 
     return;
-  }
-
-  handleAddCard = () => {
-    const { dispatch, listID } = this.props 
-    const { text } = this.state
-
-    if(text) {
-      dispatch(addCard(listID, text))
-    }
   }
 
   renderAddButton = () => {
@@ -104,7 +95,7 @@ class CrelloActionButton extends React.Component {
       </Card>
       <div style={styles.formButtonGroup}>
         <Button 
-          onMouseDown={ list ? this.handleAddList : this.handleAddCard }
+          onMouseDown={ this.handleAddList }
           variant='contained' 
           style={{ color: 'white', backgroundColor: '#5aac44' }}>
           {buttonTitle}

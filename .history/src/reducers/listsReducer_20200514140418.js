@@ -1,7 +1,6 @@
 import { CONSTANTS } from '../actions'
 
 let listID = 3 
-let cardID = 3
 
 const initialState = [
   {
@@ -43,22 +42,9 @@ const listsReducer = (state = initialState, action) => {
 
       case CONSTANTS.ADD_CARD:
         const newCard = {
-          text: action.payload.text,
-          id: cardID
+          text: action.payload,
+          is
         }
-        cardID += 1
-        const newState = state.map(list => {
-          if(list.id === action.payload.listID) {
-            return {
-              ...list,
-              cards: [...list.cards, newCard]
-            }
-          } else {
-            return list
-          }
-        })
-
-        return newState
     default:
       return state
   }
