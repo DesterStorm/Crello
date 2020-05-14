@@ -36,10 +36,8 @@ const listsReducer = (state = initialState, action) => {
       const newList = {
         title: action.payload.title,
         cards: [],
-        id: listID
+        id: list
       }
-      listID += 1
-      return [...state, newList]
     default:
       return state
   }

@@ -38,8 +38,7 @@ const listsReducer = (state = initialState, action) => {
         cards: [],
         id: listID
       }
-      listID += 1
-      return [...state, newList]
+      listID
     default:
       return state
   }

@@ -1,7 +1,5 @@
 import { CONSTANTS } from '../actions'
 
-const listID = 2 
-
 const initialState = [
   {
     title: 'this is a list title',
@@ -33,13 +31,7 @@ const listsReducer = (state = initialState, action) => {
   switch (action.type) {
 
     case CONSTANTS.ADD_LIST:
-      const newList = {
-        title: action.payload.title,
-        cards: [],
-        id: listID
-      }
-      listID += 1
-      return [...state, newList]
+      
     default:
       return state
   }
