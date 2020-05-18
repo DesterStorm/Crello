@@ -9,8 +9,8 @@ export const addList = title => {
 }
 
 export const sort = (
-  droppableIdStart,
-  droppableIdEnd,
+  droppableStart,
+  droppableEnd,
   droppableIndexStart,
   droppableIndexEnd,
   draggableId
@@ -18,11 +18,7 @@ export const sort = (
   return {
     type: CONSTANTS.DRAG_HAPPENED,
     payload: {
-      droppableIdStart,
-      droppableIdEnd,
-      droppableIndexStart,
-      droppableIndexEnd,
-      draggableId
+      droppableIndexStart
     }
   } 
 }

@@ -17,13 +17,7 @@ class App extends Component {
       return
     }
 
-    this.props.dispatch(sort(
-      source.droppableId,
-      destination.droppableId,
-      source.index,
-      destination.index,
-      draggableId
-    ))
+    this.props.dispatch(sort)
   }
 
   render () {

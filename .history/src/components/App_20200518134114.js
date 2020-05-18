@@ -3,27 +3,14 @@ import CrelloList from './CrelloList'
 import { connect } from 'react-redux'
 import CrelloActionButton from './CrelloActionButton'
 import { DragDropContext } from 'react-beautiful-dnd'
-import { sort } from '../actions'
 
 class App extends Component { 
 
   onDragEnd = (result) => {
     // reordering logic here
-    // source = where the dragging occurs. has index id
-    // destination = id where the dragged item lands. has index id
+    // source = the 
     const { destination, source, draggableId } = result
 
-    if(!destination) {
-      return
-    }
-
-    this.props.dispatch(sort(
-      source.droppableId,
-      destination.droppableId,
-      source.index,
-      destination.index,
-      draggableId
-    ))
   }
 
   render () {

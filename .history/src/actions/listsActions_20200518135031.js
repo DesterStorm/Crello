@@ -21,8 +21,8 @@ export const sort = (
       droppableIdStart,
       droppableIdEnd,
       droppableIndexStart,
-      droppableIndexEnd,
-      draggableId
+  droppableIndexEnd,
+  draggableId
     }
   } 
 }
