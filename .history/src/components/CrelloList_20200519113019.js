@@ -22,8 +22,8 @@ const CrelloList = ({title, cards, listID}) => {
           { cards.map((card, index) => (
             <CrelloCard key={card.id} index={index} text={card.text} id={card.id} />
             ))}
+            
             {provided.placeholder}
-            <CrelloActionButton listID={listID} />
         </ListContainer>
       )}
     </Droppable>
