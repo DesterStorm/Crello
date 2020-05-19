@@ -17,7 +17,7 @@ class App extends Component {
     // reordering logic here
     // source = where the dragging occurs. has index id
     // destination = id where the dragged item lands. has index id
-    const { destination, source, draggableId, type } = result
+    const { destination, source, draggableId } = result
 
     if(!destination) {
       return
@@ -28,8 +28,7 @@ class App extends Component {
       destination.droppableId,
       source.index,
       destination.index,
-      draggableId,
-      type
+      draggableId
     ))
   }
 
@@ -37,25 +36,15 @@ class App extends Component {
     const { lists } =  this.props
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
-        <div>
-          <h2>the beginning of the end</h2>
-          <Droppable droppableId='all-lists' direction='horizontal' type='list'>
-            {provided => (
-              <ListContainer {...provided.droppableProps} ref={provided.innerRef}>
-              { lists.map((list, index) => (
-                <CrelloList 
-                  listID={list.id} 
-                  key={list.id} 
-                  title={list.title} 
-                  cards={list.cards} 
-                  index={index}
-                /> 
-              ))}
-              <CrelloActionButton list />
-            </ListContainer>
-            )}
-          </Droppable>
-        </div>
+      <div>
+        <h2>the beginning of the end</h2>
+        <Droppable droppableId='all-lists' direction='horizontal' type='list'>
+          {provided => (
+
+          )}
+        </Droppable>
+        
+      </div>
       </DragDropContext>
     );
   }

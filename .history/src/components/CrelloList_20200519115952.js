@@ -22,23 +22,24 @@ const CrelloList = ({ title, cards, listID, index }) => {
           ref={provided.innerRef} 
           {...provided.dragHandleProps}
         >
-          <Droppable droppableId={String(listID)}>
-            { provided => (
-              <div {...provided.droppableProps} ref={provided.innerRef}>
-                <h4>{title}</h4>
-                { cards.map((card, index) => (
-                  <CrelloCard 
-                    key={card.id} 
-                    index={index} 
-                    text={card.text} 
-                    id={card.  id} 
-                  />
-                ))}
-                {provided.placeholder}
-                <CrelloActionButton listID={listID} />
+        <Droppable droppableId={String(listID)}>
+          { provided => (
+            <div>
+              <h4>{title}</h4>
+              { cards.map((card, index) => (
+                <CrelloCard 
+                  key={card.id} 
+                  index={index} 
+                  text={card.text} 
+                  id={card.  id} 
+                />
+              ))}
+              {provided.placeholder}
+              <CrelloActionButton listID={listID} />
               </div>
-            )}
-          </Droppable>
+            
+          )}
+        </Droppable>
         </ListContainer>
       )}
     </Draggable>

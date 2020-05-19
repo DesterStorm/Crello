@@ -28,8 +28,7 @@ class App extends Component {
       destination.droppableId,
       source.index,
       destination.index,
-      draggableId,
-      type
+      draggableId
     ))
   }
 

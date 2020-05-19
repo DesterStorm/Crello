@@ -17,7 +17,7 @@ class App extends Component {
     // reordering logic here
     // source = where the dragging occurs. has index id
     // destination = id where the dragged item lands. has index id
-    const { destination, source, draggableId, type } = result
+    const { destination, source, draggableId } = result
 
     if(!destination) {
       return
@@ -28,8 +28,7 @@ class App extends Component {
       destination.droppableId,
       source.index,
       destination.index,
-      draggableId,
-      type
+      draggableId
     ))
   }
 

@@ -36,7 +36,7 @@ const CrelloList = ({ title, cards, listID, index }) => {
                 ))}
                 {provided.placeholder}
                 <CrelloActionButton listID={listID} />
-              </div>
+                </div>
             )}
           </Droppable>
         </ListContainer>
