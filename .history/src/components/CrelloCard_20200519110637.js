@@ -5,7 +5,7 @@ import CardContent from '@material-ui/core/CardContent';
 import { Draggable } from 'react-beautiful-dnd'
 import styled from 'styled-components'
 
-const CardContainer = styled.div`
+const ListContainer = styled.div`
   margin-bottom: 8px;
 `
 
@@ -14,13 +14,13 @@ const CrelloCard = ({text, id, index}) => {
     <Draggable draggableId={String(id)} index={index}>
       {provided => (
       <CardContainer ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps}>      
-        <Card>
-          <CardContent>
-            <Typography gutterBottom>
-              {text}
-            </Typography>
-          </CardContent>
-        </Card>
+      <Card>
+        <CardContent>
+          <Typography gutterBottom>
+            {text}
+          </Typography>
+        </CardContent>
+      </Card>
       </CardContainer>
       )}
     </Draggable>

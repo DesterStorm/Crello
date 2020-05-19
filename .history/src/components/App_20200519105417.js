@@ -38,7 +38,7 @@ class App extends Component {
       <DragDropContext onDragEnd={this.onDragEnd}>
       <div>
         <h2>the beginning of the end</h2>
-        <ListContainer>
+        <ListCo>
           { lists.map(list => (
             <CrelloList 
             listID={list.id} 
@@ -47,7 +47,7 @@ class App extends Component {
             cards={list.cards} /> 
           ))}
           <CrelloActionButton list />
-        </ListContainer>
+        </div>
       </div>
       </DragDropContext>
     );

@@ -47,7 +47,7 @@ class App extends Component {
             cards={list.cards} /> 
           ))}
           <CrelloActionButton list />
-        </ListContainer>
+        </>
       </div>
       </DragDropContext>
     );

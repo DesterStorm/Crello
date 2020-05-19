@@ -21,7 +21,7 @@ const CrelloCard = ({text, id, index}) => {
             </Typography>
           </CardContent>
         </Card>
-      </CardContainer>
+      </cardContainer>
       )}
     </Draggable>
   )

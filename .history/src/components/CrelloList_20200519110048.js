@@ -10,7 +10,7 @@ const ListContainer = styled.div`
   width: 295px;
   padding: 8px;
   margin-right: 8px;
-  height: 100%;
+  height: '100%';
 `
 
 const CrelloList = ({title, cards, listID}) => {
@@ -28,6 +28,17 @@ const CrelloList = ({title, cards, listID}) => {
       )}
     </Droppable>
   )
+}
+
+const styles = {
+  container: {
+    backgroundColor: '#dfe3e6',
+    borderRadius: 10,
+    width: 295,
+    padding: 8,
+    marginRight: 8,
+    height: '100%'
+  }
 }
 
 export default CrelloList 

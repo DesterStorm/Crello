@@ -6,10 +6,7 @@ import { DragDropContext } from 'react-beautiful-dnd'
 import { sort } from '../actions'
 import styled from 'styled-components'
 
-const ListContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-`
+const ListContainer
 
 class App extends Component { 
 
@@ -38,7 +35,7 @@ class App extends Component {
       <DragDropContext onDragEnd={this.onDragEnd}>
       <div>
         <h2>the beginning of the end</h2>
-        <ListContainer>
+        <div style= {styles.listsContainer}>
           { lists.map(list => (
             <CrelloList 
             listID={list.id} 
@@ -47,7 +44,7 @@ class App extends Component {
             cards={list.cards} /> 
           ))}
           <CrelloActionButton list />
-        </ListContainer>
+        </div>
       </div>
       </DragDropContext>
     );
