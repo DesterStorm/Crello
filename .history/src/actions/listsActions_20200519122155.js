@@ -23,8 +23,7 @@ export const sort = (
       droppableIdEnd,
       droppableIndexStart,
       droppableIndexEnd,
-      draggableId,
-      type
+      draggableId
     }
   } 
 }

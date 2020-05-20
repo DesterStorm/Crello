@@ -18,7 +18,7 @@ const CrelloList = ({ title, cards, listID, index }) => {
     <Draggable draggableId={String(listID)} index={index}>
       {provided => (
         <ListContainer 
-          {...provided.draggableProps} 
+          {...provided.dragableProps} 
           ref={provided.innerRef} 
           {...provided.dragHandleProps}
         >

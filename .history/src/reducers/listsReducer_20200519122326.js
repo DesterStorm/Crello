@@ -67,16 +67,13 @@ const listsReducer = (state = initialState, action) => {
           droppableIdEnd,
           droppableIndexStart,
           droppableIndexEnd,
-          draggableId,
-          type
+          draggableId
          } = action.payload
         const newState = [...state]
 
         // dragging lists around
         if(type === 'list') {
-          const list = newState.splice(droppableIndexStart, 1)
-          newState.splice(droppableIndexEnd, 0, ...list)
-          return newState
+          const list = newState.splice(droppable)
         }
 
         // in the same list
